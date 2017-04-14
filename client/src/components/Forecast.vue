@@ -59,14 +59,12 @@
   				<td colspan="2">{{ vis }}</td>
   			</tr>
   			<tr>
-  				<th>Pression atmosphérique</th>
-  				<th>Tendance de la pression</th>
+  				<th colspan="2">Pression atmosphérique</th>
   				<th>UV</th>
   				<th>Indice UV</th>
   			</tr>
   			<tr class="text-center">
-  				<td>{{ bar.r }} hPa</td>
-  				<td>{{ bar.d }}</td>
+  				<td colspan="2">{{ bar.r }} hPa</td>
   				<td>{{ uv.i }}</td>
   				<td>{{ uv.t }}</td>
   			</tr>

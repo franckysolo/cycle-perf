@@ -78,7 +78,15 @@
             <tr v-for="(entry, num) in filteredData" v-else>
               <td v-for="o in headers">
                 <!-- Todo calcul as and desc in compute method -->
-                {{ o.key == 'id' ?  setCounter(num) : entry[o.key] }}
+                <template v-if="o.key == 'id'">
+                  {{ setCounter(num) }}
+                </template>
+                <template  v-if="o.key == 'date'">
+                  {{ dateFormat(entry[o.key]) }}
+                </template>
+                <template v-if="o.key !== 'date' && o.key !== 'id'">
+                  {{ entry[o.key] }}
+                </template>
               </td>
             </tr>
           </tbody>
@@ -118,6 +126,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 export default {
   name: 'Grid',
   props: {
@@ -171,6 +180,9 @@ export default {
     }
   },
   methods: {
+    dateFormat (date) {
+      return moment(date, 'YYYY-MM-DD').format('DD/MM/YYYY')
+    },
     setCounter (number) {
       let counter = 1 + (number + this.currentPage * this.perPage) - this.perPage
       if (this.order === 1) {
