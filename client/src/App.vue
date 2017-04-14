@@ -1,15 +1,5 @@
 <template>
   <div id="app">
-    <!-- <div class="row">
-  		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-  			<p class="logo">
-  				<img alt="Logo" src="./assets/img/picto-velo.png" width="50" height="25"  class="img-responsive">
-  			</p>
-  		</div>
-  		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-  			<h1 class="h4">Personnal Cycle Performance Session</h1>
-  		</div>
-  	</div> -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
