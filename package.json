@@ -2,6 +2,7 @@
   "name": "cycle-perf",
   "version": "1.0.0",
   "author": "franckysolo <franckysolo@gmail.com>",
+  "description": "A locale application to manage your stopwatch data for your bike rides.",
   "main": "server/server.js",
   "engines": {
     "node": ">=4"
@@ -29,9 +30,8 @@
     "nsp": "^2.1.0"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/franckysolo/cycle-perf.git"
   },
-  "license": "UNLICENSED",
-  "description": "cycle-perf"
+  "license": "MIT"
 }

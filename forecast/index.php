@@ -5,6 +5,7 @@
  */
 header("Access-Control-Allow-Origin: http://www.cycle-perf.local");
 header('Content-Type', 'application/json');
+// FRXX0016 = forecast station in France (0016 Merignac)
 $url = 'http://wxdata.weather.com/wxdata/weather/local/FRXX0016?dayf=5&locale=fr_FR&cc=*';
 $ch = curl_init();
 // configuration des options
