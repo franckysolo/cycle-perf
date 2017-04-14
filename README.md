@@ -1,6 +1,13 @@
 # Cycle Perf
 
 A locale application to manage your stopwatch data for your bike rides.
+Somes screen shots 
+![Screen shot A](/docs/screen-shot-a.png)
+![Screen shot B](/docs/screen-shot-b.png)
+![Screen shot C](/docs/screen-shot-c.png)
+![Screen shot D](/docs/screen-shot-d.png)
+![Screen shot E](/docs/screen-shot-e.png)
+![Screen shot F](/docs/screen-shot-f.png)
 
 ## Infrastructure
 
