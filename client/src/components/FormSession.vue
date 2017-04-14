@@ -56,9 +56,15 @@
           {{ errors.first('speed_max') }}
         </em>
       </div>
+
     </div>
     <div class="form-group text-right">
-      <div class="col-sm-12">
+      <div class="col-sm-6">
+        <p class="logo">
+          <img alt="Logo" src="../assets/img/picto-velo.png" width="50" height="25"  class="img-responsive">
+        </p>
+      </div>
+      <div class="col-sm-6">
         <button class="btn btn-primary btn-submit" type="submit">
           Enregistrer
         </button>
