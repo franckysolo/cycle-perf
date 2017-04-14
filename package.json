@@ -7,7 +7,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "server": "pm2 start --watch server/server.js",
+    "server": "pm2 start ecosystem.config.js --only cycle-perf",
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check"
