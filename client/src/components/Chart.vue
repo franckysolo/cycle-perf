@@ -24,10 +24,10 @@ export default {
     }
   },
   mounted () {
-    setTimeout(() => this.loadChart(), 100)
+    setTimeout(() => this.loadChart(), 150)
     var self = this
     window.eventManager.$on('reload-data', () => {
-      setTimeout(() => self.loadChart(), 100)
+      setTimeout(() => self.loadChart(), 150)
     })
   },
   methods: {
