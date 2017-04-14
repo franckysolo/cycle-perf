@@ -1,0 +1,41 @@
+{
+  "name": "Session",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "order": "date DESC"
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "distance": {
+      "type": "number",
+      "required": true
+    },
+    "speed_avg": {
+      "type": "number",
+      "required": true
+    },
+    "speed_max": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
