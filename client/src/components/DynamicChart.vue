@@ -76,7 +76,7 @@ export default {
     },
     loadDynChart (where) {
       let url = this.baseUrl + '/sessions'
-      url += encodeURI('?filter={"where":{"date":{"regexp": "' + this.year + '"}}}')
+      url += encodeURI('?filter={"where":{"date":{"regexp": "' + this.year + '"}}, "order": "date ASC"}')
       this.$http.get(url).then(response => {
         this.$set(this.$data, 'items', response.body)
       }, response => {
